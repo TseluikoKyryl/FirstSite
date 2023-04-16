@@ -43,7 +43,6 @@ h4 {
         url("../FirstSite/image/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png"),
         url("../FirstSite/image/Pink\ Shape.png");
     background-position: right, 1100px, 1100px;
-    position: absolute;
     background-position-y: 1;
     background-repeat: no-repeat;
     margin: 0;
@@ -144,4 +143,9 @@ h4 {
     text-decoration: none;
     text-shadow: -1px -1px -1px #242424;
 
+}
+.section {
+    background-color: #ff0000;
+    color: blue;
+    padding: ;
 }
