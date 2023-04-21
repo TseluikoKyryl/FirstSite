@@ -1,28 +1,16 @@
 .body {
     display: flex;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
     font-family: 'Overpass Mono', monospace;
-    ;
     font-size: 23px;
     line-height: 1.6;
     color: #333;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
-html {
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+a {
+    text-decoration: none;
 }
 
-.div {
+* {
     margin: 0;
     padding: 0;
     border: none;
@@ -35,7 +23,9 @@ h1,
 h2,
 h3,
 h4 {
+    font-family: 'Overpass Mono', monospace;
     margin: 0;
+    font-weight: 100;
 }
 
 *:after,
@@ -64,6 +54,7 @@ h4 {
     display: flex;
     flex-direction: column;
     font-weight: 200;
+    align-items: center;
 
 }
 
@@ -127,6 +118,7 @@ h4 {
     margin-left: 150px;
     margin-bottom: 30px;
     bottom: -18px;
+    margin-top: 10px;
 }
 
 .nav {
@@ -230,6 +222,7 @@ h4 {
 }
 
 .text2_title {
+    padding-top: 20px;
     font-family: 'Overpass Mono', monospace;
     font-size: 54px;
     color: #8cd0de;
@@ -243,20 +236,23 @@ h4 {
     margin-left: 370px;
     color: #e484eb;
     line-height: 1;
+    padding-bottom: 20px;
 }
 
 .section2_img {
     background-image: url('../FirstSite/image/Shape2.png');
     width: 100vh;
     height: 100vh;
+    padding-top: 10px;
     background-repeat: no-repeat;
     margin: 0 auto;
     padding-bottom: 100px;
 
 }
+
 .read_more_bntt {
-    margin-top: -450px;
-    margin-left: 550px;
+    text-align: center;
+    margin-top: -500px;
 }
 
 .read_more_bnt2 {
@@ -273,4 +269,487 @@ h4 {
     white-space: nowrap;
     text-align: center;
     font-weight: 200;
+}
+
+.section3 {
+    background-color: #000000;
+    min-height: 860px;
+    width: 100%;
+}
+
+.section3_text {
+    color: #e484eb;
+    padding-top: 80px;
+    font-family: 'Overpass Mono', monospace;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.section3_sub_title {
+    color: #8cd0de;
+    text-align: center;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.section_box {
+    /* display: inline-block; */
+    font-family: 'Overpass Mono', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    ;
+    padding-top: 50px;
+}
+
+.box1 {
+    background-color: #242424;
+    border: #00d5ff;
+    height: 380px;
+    width: 350px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    ;
+}
+
+.box2 {
+    background-color: #242424;
+    border: #00d5ff;
+    height: 380px;
+    width: 350px;
+    border: 1px solid;
+    margin: 10px 60px 10px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    ;
+}
+
+.box3 {
+    background-color: #242424;
+    border: #00d5ff;
+    height: 380px;
+    width: 350px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    ;
+}
+
+.box_textDay1 {
+    text-align: center;
+    font-size: 55px;
+    color: #c85156;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.box_textInfo1 {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    width: 250 px;
+
+}
+
+.box_textPrice1 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffcc66;
+    margin-top: 50px;
+    font-weight: 100;
+
+}
+
+.box_textDay2 {
+    text-align: center;
+    font-size: 55px;
+    color: #89cbd9;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.box_textInfo2 {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    width: 200px;
+
+}
+
+.box_textPrice2 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffcc66;
+    margin-top: 50px;
+    font-weight: 100;
+
+}
+
+.box_textDay3 {
+    text-align: center;
+    font-size: 55px;
+    color: #fdcd6e;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.box_textInfo3 {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.box_textPrice3 {
+    text-align: center;
+    font-size: 36px;
+    color: #ffcc66;
+    margin-top: 50px;
+    font-weight: 100;
+
+}
+
+.btn1 {
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    color: #8cd0de;
+    background-color: #cc99ff;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 7px 20px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    margin-left: 100px;
+
+}
+
+.btn2 {
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    vertical-align: top;
+    color: #8cd0de;
+    background-color: #cc99ff;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 7px 20px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    margin-left: 25px;
+
+
+}
+
+.btn3 {
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    vertical-align: top;
+    color: #8cd0de;
+    background-color: #cc99ff;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 7px 20px;
+    text-shadow: -1px -1px -1px #242424;
+    margin-left: 25px;
+}
+
+.section4 {
+    background-color: #242424;
+    width: 100%;
+    height: 900px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+.image-container2 {
+    margin: 0 56px;
+}
+
+#img_sub_text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 30px 0 30px 0;
+
+}
+
+#img_btn_readMore {
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    color: #242424;
+    background-color: #df585e;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    padding: 7px 30px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 200;
+}
+
+.section5 {
+    width: 100%;
+    height: 900px;
+    background-color: #242424;
+    background-image: url("../FirstSite/image/left.png");
+    background-repeat: no-repeat;
+}
+
+.img_left {
+    float: left;
+}
+
+.text_section5 {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 0 0 0 650px;
+    padding-top: 200px;
+}
+
+.title_section5 {
+    font-size: 54px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.subtitle_section5 {
+    font-size: 34px;
+    padding-bottom: 50px;
+    color: #df585e;
+    font-weight: 400;
+
+}
+
+.btn_section5 {
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    color: #242424;
+    background-color: #8cd0de;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    padding: 7px 30px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 200;
+}
+
+.section6 {
+    width: 100%;
+    height: 1000px;
+    background-color: #242424;
+}
+
+.section6_text {
+    font-family: 'Overpass Mono', monospace;
+    text-align: center;
+}
+
+.text6_title {
+    padding-top: 20px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 54px;
+    color: #8cd0de;
+    font-weight: 100;
+
+}
+
+.text6 {
+    font-size: 29px;
+    width: 500px;
+    margin-left: 370px;
+    color: #e484eb;
+    line-height: 1;
+    padding-bottom: 70px;
+}
+
+.section6_img {
+    background-image: url('../FirstSite/image/Maps.png');
+    width: 100vh;
+    height: 100vh;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.Contact_us_btn {
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    color: #242424;
+    background-color: #8cd0de;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    padding: 7px 30px;
+    white-space: nowrap;
+    font-weight: 200;
+    margin-top: 610px;
+    margin-left: 370px;
+}
+
+.section7 {
+    width: 100%;
+    height: 900px;
+    background-color: #242424;
+}
+
+.section7_text {
+    width: 490px;
+    height: 360px;
+    padding-top: 200px;
+}
+
+.section7_title_text {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 40px;
+    color: #e484eb;
+}
+
+.section7_subtitle_text {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 25px;
+    color: #fff;
+}
+
+.section7_img {
+    background-image: url("../FirstSite/image/Blue\ Shape.png");
+    background-repeat: no-repeat;
+    width: 630px;
+    height: 630px;
+    margin-left: 580px;
+    margin-top: -500px;
+
+
+}
+
+.container7_btn_send {
+    text-align: center;
+    height: auto;
+    width: auto;
+    font-family: 'Overpass Mono', monospace;
+    display: inline-block;
+    color: #fff;
+    background-color: #df585e;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: -1px -1px -1px #242424;
+    padding: 5px 25px 5px;
+    white-space: nowrap;
+    font-weight: 200;
+    margin-top: 30px;
+
+}
+
+.Title_form {
+    font-size: 33px;
+    margin-left: 60px;
+    padding-top: 30px;
+}
+
+.Form {
+    width: 100 auto;
+    height: 100 auto;
+}
+
+.input_name {
+    background-color: #4e5ceb;
+    color: #4e5ceb;
+}
+
+input[type="name"] {
+    background-color: #4e5ceb;
+    border: 1px solid #fff
+}
+
+input[type="surname"] {
+    background-color: #4e5ceb;
+    border: 1px solid #fff;
+}
+
+input[type="email"] {
+    background-color: #4e5ceb;
+    border: 1px solid #fff;
+}
+
+#masage {
+    
+    background-color: #4e5ceb;
+    border: 1px solid #fff;
+    margin-left: 50px;
+}
+
+
+.footer {
+    width: 100%;
+    height: 650px;
+    background-color: #000000;
+}
+
+.footer_nav {
+    font-family: 'Overpass Mono', monospace;
+    display: flex;
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.footer_nav2 {
+    font-family: 'Overpass Mono', monospace;
+    display: flex;
+    font-size: 35px;
+    margin-left: 200px;
+    margin-top: -238px;
+}
+
+.footer_inner {
+    height: 650px;
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer_nav_link {
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+}
+
+.footer_nav_link2 {
+    color: #fff;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.Copyright {
+    color: #00d5ff;
+    margin-top: 370px;
 }
