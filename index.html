@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="C:\Users\Kyryll\Documents\GitHub\FirstSite\Style.css">
+    <link rel="stylesheet" href="/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500&display=swap" rel="stylesheet">
@@ -10,6 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicos</title>
+    <script>
+        function showSuccessMessage() {
+            event.preventDefault();
+            var successMessage = document.getElementById("success-message");
+            successMessage.style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
@@ -42,7 +49,7 @@
     <section class="section1">
         <div class="container">
             <div class="section_image">
-                <img src="../FirstSite/image/Shape.png" alt="section_image">
+                <img src="/image/Shape.png" alt="section_image">
             </div>
             <div class="section_text">
                 <h1 class="section_text1">The concert</h1>
@@ -141,8 +148,7 @@
                 </div>
                 <div class="image-container">
                     <div class="image-container1"><img
-                            src="../FirstSite/image/(smallPlace Your Image Here (Double Click to Edit)3.png"
-                            alt="Картинка 1">
+                            src="/image/(smallPlace Your Image Here (Double Click to Edit)3.png" alt="Картинка 1">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -151,8 +157,7 @@
                         </div>
                     </div>
                     <div class="image-container2"><img
-                            src="../FirstSite/image/(small)Place Your Image Here (Double Click to Edit)4.png"
-                            alt="Картинка 2">
+                            src="/image/(small)Place Your Image Here (Double Click to Edit)4.png" alt="Картинка 2">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -161,8 +166,7 @@
                         </div>
                     </div>
                     <div class="image-container3"><img
-                            src="../FirstSite/image/(smallPlace Your Image Here (Double Click to Edit)5.png"
-                            alt="Картинка 3">
+                            src="/image/(smallPlace Your Image Here (Double Click to Edit)5.png" alt="Картинка 3">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -220,16 +224,29 @@
                 <div class="Title_form">
                     <h1>Follow Us</h1>
                 </div>
-                <div class="Form">
-                    <div class="input_name">
-                        <input type="name" placeholder="Name">
-                    </div>
-                    <div class="input_surname"><input type="surname" placeholder="Surname"></div>
-                    <div class="input_emal">
-                        <input type="email" placeholder="E-mail" aria-placeholder="b">
-                    </div>
-                    <div class="input_masage"><textarea name="input_masage" id="masage" cols="30" rows="10" placeholder="Enter your message
-                        "></textarea></div>
+                <div id="success-message">Все прошло успешно</div>
+                <div class="form">
+                    <form method="POST">
+                        <div class="form-row">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                        <br><br>
+                        <textarea name="message" id="message" placeholder="Massage" rows="10" cols="100"
+                            required></textarea>
+                        <br><br>
+                        <input type="submit" value="Send" id="submit" class="styled-button"
+                            onclick="showSuccessMessage(event)">
+                        <div class="checkbox">
+                            <label for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <span class="checkmark"></span>
+                                <p class="label-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt</p>
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
