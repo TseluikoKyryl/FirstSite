@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,17 +22,16 @@
 
 <body>
     <header class="header">
-        <div class="header_top">
-            <div class="nav">
-                <nav>
-                    <a class="nav_link" href="#">Artist</a>
-                    <a class="nav_link" href="#">Festival</a>
-                    <a class="nav_link" href="#">About us</a>
-                    <a class="nav_link" href="#">Contact</a>
-                </nav>
-            </div>
-            <div class="logo">
-            </div>
+        <div class="head-nav">
+            <nav>
+                <a class="nav_link" href="#">Artist</a>
+                <a class="nav_link" href="#">Festival</a>
+                <a class="nav_link" href="#">About us</a>
+                <a class="nav_link" href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="/image/Header_loho.png">
         </div>
     </header>
     <div class="intro">
@@ -44,33 +44,43 @@
                 <a class="btn" href="#">Buy Tickets</a>
             </div>
         </div>
+        <!-- <div class="img_intro2">
+            <img src="/image/Shape.png"  alt="">
+        </div> -->
     </div>
 
     <section class="section1">
         <div class="container">
-            <div class="section_image">
-                <img src="/image/Shape.png" alt="section_image">
-            </div>
-            <div class="section_text">
-                <h1 class="section_text1">The concert</h1>
-                <p class="section_text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et</p>
-            </div>
-            <div class="read_more">
-                <a class="read_more_bnt" href="#">Read More </a>
+            <div class="section_box1">
+                <div class="section_image">
+                    <img src="">
+                </div>
+                <div class="section_text">
+                    <h1 class="section_text1">The concert</h1>
+                    <p class="section_text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor
+                        incididunt
+                        ut labore et</p>
+                    <div class="read_more">
+                        <a class="read_more_bnt" href="#">Read More </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="section2">
         <div class="container">
-            <div class="section2_text">
-                <h1 class="text2_title">About Us</h1>
-                <p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-            </div>
-            <div class="section2_img"></div>
-            <div class="read_more_bntt">
-                <a class="read_more_bnt2" href="#">Read more</a>
+            <div class="section2_box">
+                <div class="section2_text">
+                    <h1 class="text2_title">About Us</h1>
+                    <p class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="read_more_bntt">
+                    <a class="read_more_bnt2" href="#">Read more</a>
+                </div>
+                <div class="section2_img">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -195,11 +205,13 @@
     </section>
     <section class="section6">
         <div class="container">
-            <div class="section6_text">
-                <h1 class="text6_title">About Us</h1>
-                <p class="text6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-            </div>
-            <div class="section6_img">
+            <div class="section6_box">
+                <div class="section6_text">
+                    <h1 class="text6_title">About Us</h1>
+                    <p class="text6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="section6_img">
+                </div>
                 <div class="Contact_us_btn">
                     <a href="#">Contact us</a>
                 </div>
@@ -208,69 +220,79 @@
     </section>
     <section class="section7">
         <div class="container">
-            <div class="section7_text">
-                <div class="section7_title_text">
-                    <h1>Newsletter</h1>
+            <div class="section_box7">
+                <div class="section7_text">
+                    <div class="section7_title_text">
+                        <h1>Newsletter</h1>
+                    </div>
+                    <div class="section7_subtitle_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et</p>
+                    </div>
+                    <div class="container7_btn_send">
+                        <a href="#">Send</a>
+                    </div>
                 </div>
-                <div class="section7_subtitle_text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et</p>
-                </div>
-                <div class="container7_btn_send">
-                    <a href="#">Send</a>
-                </div>
-            </div>
-            <div class="section7_img">
-                <div class="Title_form">
-                    <h1>Follow Us</h1>
-                </div>
-                <div id="success-message">Everything went well</div>
-                <div class="form">
-                    <form method="POST">
-                        <div class="form-row">
-                            <input type="text" name="name" id="name" placeholder="Name" required>
-                            <input type="text" name="surname" id="surname" placeholder="Surname" required>
-                        </div>
-                        <input type="email" name="email" id="email" placeholder="E-Mail" required>
-                        <br><br>
-                        <textarea name="message" id="message" placeholder="Massage" rows="10" cols="100"
-                            required></textarea>
-                        <br><br>
-                        <input type="submit" value="Send" id="submit" class="styled-button"
-                            onclick="showSuccessMessage(event)">
-                        <div class="checkbox">
-                            <label for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <span class="checkmark"></span>
-                                <p class="label-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                    eiusmod tempor incididunt</p>
-                            </label>
-                        </div>
-                    </form>
+                <div class="section7_img">
+                    <div class="Title_form">
+                        <h1>Follow Us</h1>
+                    </div>
+                    <div id="success-message">Everything went well</div>
+                    <div class="form">
+                        <form method="POST">
+                            <div class="form-row">
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+                                <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                            </div>
+                            <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                            <br><br>
+                            <textarea name="message" id="message" rows="10" cols="100" required></textarea>
+                            <br><br>
+                            <input type="submit" value="Send" id="submit" class="styled-button"
+                                onclick="showSuccessMessage(event)">
+                            <div class="checkbox">
+                                <label for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <span class="checkmark"></span>
+                                    <p class="label-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do
+                                        eiusmod tempor incididunt</p>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer_inner">
-            <div class="footer_logo"></div>
+            <div class="img_footer">
+                <img src="/image/Footer_logo.png" alt="">
+            </div>
             <div class="footer_nav">
+                <div class="footer_logo"></div>
                 <nav>
                     <a class="footer_nav_link" href="#">Festival</a>
                     <a class="footer_nav_link" href="#">Concerts</a>
                     <a class="footer_nav_link" href="#">About us</a>
                     <a class="footer_nav_link" href="#">Contact</a>
                 </nav>
-            </div>
-            <div class="footer_nav2">
                 <nav>
-                    <a class="footer_nav_link2" href="#">FAQ</a>
-                    <a class="footer_nav_link2" href="#">Policity Privacy</a>
-                    <a class="footer_nav_link2" href="#">Cookies</a>
+                    <a class="footer_nav_link" href="#">FAQ</a>
+                    <a class="footer_nav_link" href="#">Policity Privacy</a>
+                    <a class="footer_nav_link" href="#">Cookies</a>
                 </nav>
             </div>
-            <div class="Copyright">
-                <h3>Copyright | Kyryll</h3>
+            <div class="footer_basement">
+                <div>
+                    <h3>Copyright | Kyryll</h3>
+                </div>
+                <div class="Footer_social-media">
+                    <img src="/image/Instagram.png" alt="">
+                    <img src="/image/Facebook.png" alt="">
+                    <img src="/image/Twitter.png" alt="">
+                </div>
             </div>
         </div>
     </footer>

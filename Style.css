@@ -1,10 +1,10 @@
 .body {
-    display: flex;
     font-family: 'Overpass Mono', monospace;
     font-size: 23px;
     line-height: 1.6;
     color: #333;
 }
+
 #success-message {
     display: none;
     background-color: #4CAF50;
@@ -25,9 +25,7 @@ a {
     margin: 0;
     padding: 0;
     border: none;
-    top: 0;
-    left: 0;
-    right: 0;
+
 }
 
 h1,
@@ -45,46 +43,46 @@ h4 {
 }
 
 .container {
-    width: 100%;
-    max-width: 1185px;
+    max-width: 1205px;
+    padding: 0 30px;
     margin: 0 auto;
     padding: 0;
+
 }
+
 
 .intro {
     width: 100%;
-    height: 820px;
+    float: right;
+    background-image: url("/image/Waves.png");
     background: #242424;
-    background-image: url("/image/Waves.png"),
-        url("/image/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).png"),
-        url("/image/Pink\ Shape.png");
-    background-position: right, 1100px, 1100px;
-    background-position-y: 1;
-    background-repeat: no-repeat;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;
-    align-items: center;
-
+    text-align: left;
+    min-height: 815px;
+    max-height: 100%;
 }
 
-.intro_inner {
-    width: 100%;
-    max-width: 460px;
-    margin: 0;
-    padding-top: 250px;
-    font-weight: 200;
 
+.intro_inner {
+    display: flex;
+    max-width: 460px;
+    margin: 0 auto;
+    font-weight: 200;
+    flex-wrap: wrap;
+    flex-direction: row;
+    left: auto;
+    padding-top: 250px;
 }
 
 .intro_main {
+    display: flex;
+    text-align: left;
     font-size: 80px;
     font-family: 'Overpass Mono', monospace;
     line-height: 0.9;
     align-items: center;
     color: #fff;
     font-weight: 100;
+    word-wrap: break-word;
 
 }
 
@@ -92,10 +90,7 @@ h4 {
     font-family: 'Overpass Mono', monospace;
     font-size: 30px;
     color: #ffcc66;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    font-weight: 200;
+
 
 }
 
@@ -108,42 +103,36 @@ h4 {
 }
 
 .header {
-    width: 100%;
-    height: 65px;
-    background-color: #8cd0de;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
     display: flex;
-
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    min-height: 65px;
+    background-color: #8cd0de;
+    position: relative;
 }
 
 .logo {
-    background-image: url("/image/Smart\ Object.png");
+    display: flex;
+    height: 100%;
+    width: 125px;
     background-repeat: no-repeat;
-    position: absolute;
-    width: auto;
-    height: auto;
-    margin-left: 150px;
-    margin-bottom: 30px;
-    bottom: -18px;
-    margin-top: 10px;
+    order: 1;
 }
 
-.nav {
+.head-nav {
+    display: flex;
+    order: 2;
     font-size: 20px;
     font-family: 'Overpass Mono', monospace;
-    display: flex;
     text-decoration: none;
-    margin-left: 1230px;
-    margin-top: 18px;
-
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 .nav_link {
-    position: static;
     text-decoration: none;
     margin: 3px;
     color: #37474a;
@@ -154,7 +143,7 @@ h4 {
     font-family: 'Overpass Mono', monospace;
     display: inline-block;
     vertical-align: top;
-    color: #8cd0de;
+    color: #fff;
     background-color: #cc99ff;
     font-size: 15px;
     margin-top: 30px;
@@ -168,18 +157,25 @@ h4 {
     background-color: #000000;
     color: blue;
     width: 100%;
-    height: 890px;
+    min-height: 890px;
+    max-height: 100vh;
 }
 
 .section_image {
-    padding-top: 170px;
-    display: inline-block;
+    background-size: 100%;
+    background-image: url("/image/Shape.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    /* уменьшение ширины до 50% от исходного размера */
+    min-height: 400px;
+    height: auto;
+    margin: 0 auto;
+
 }
 
 .section_text {
-    height: 500px;
-    width: 500px;
-    margin: -400px 1100px 0px 800px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .section_text1 {
@@ -193,6 +189,7 @@ h4 {
 
 .section_text2 {
     width: 480px;
+    margin: 0 auto;
     font-size: 27px;
     font-family: 'Overpass Mono', monospace;
     line-height: 0.9;
@@ -201,7 +198,7 @@ h4 {
 }
 
 .read_more {
-    margin: -200px 1100px 5px 970px;
+    max-height: 33px;
     width: auto;
 }
 
@@ -227,6 +224,11 @@ h4 {
     background-color: #242424;
 }
 
+.section2_box {
+    display: flex;
+    flex-direction: column;
+}
+
 .section2_text {
     font-family: 'Overpass Mono', monospace;
     text-align: center;
@@ -242,28 +244,30 @@ h4 {
 }
 
 .text2 {
+    display: flex;
     font-size: 29px;
-    width: 500px;
-    margin-left: 370px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
     color: #e484eb;
     line-height: 1;
     padding-bottom: 20px;
 }
 
 .section2_img {
-    background-image: url('/image/Shape2.png');
-    width: 100vh;
-    height: 100vh;
-    padding-top: 10px;
+    background-size: 100%;
+    background-image: url("/image/Shape2.png");
     background-repeat: no-repeat;
+    width: 100%;
+    /* уменьшение ширины до 50% от исходного размера */
+    min-height: 500px;
+    height: auto;
     margin: 0 auto;
-    padding-bottom: 100px;
 
 }
 
 .read_more_bntt {
     text-align: center;
-    margin-top: -500px;
 }
 
 .read_more_bnt2 {
@@ -285,10 +289,14 @@ h4 {
 .section3 {
     background-color: #000000;
     min-height: 860px;
+    max-height: 100%;
     width: 100%;
 }
 
 .section3_text {
+    flex-direction: column;
+
+    display: flex;
     color: #e484eb;
     padding-top: 80px;
     font-family: 'Overpass Mono', monospace;
@@ -298,23 +306,18 @@ h4 {
 
 .section3_sub_title {
     color: #8cd0de;
-    text-align: center;
     font-size: 20px;
-    width: 500px;
-    margin-left: 350px;
-    margin-top: 30px;
+    flex-direction: column;
 }
 
 .section_box {
     /* display: inline-block; */
     font-family: 'Overpass Mono', monospace;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    ;
     padding-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .box1 {
@@ -337,7 +340,6 @@ h4 {
     height: 380px;
     width: 350px;
     border: 1px solid;
-    margin: 10px 60px 10px 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -484,12 +486,13 @@ h4 {
 .section4 {
     background-color: #242424;
     width: 100%;
-    height: 900px;
+    height: 100%;
+    min-height: 860px;
 }
 
 .image-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
@@ -532,14 +535,17 @@ h4 {
 
 .img_left {
     float: left;
+    max-width: 100%;
+    height: auto;
 }
 
 .text_section5 {
+    display: flex;
     width: 400px;
     height: 400px;
     text-align: center;
-    margin: 0 0 0 650px;
-    padding-top: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .title_section5 {
@@ -577,6 +583,7 @@ h4 {
 }
 
 .section6_text {
+    flex-direction: column;
     font-family: 'Overpass Mono', monospace;
     text-align: center;
 }
@@ -591,26 +598,28 @@ h4 {
 }
 
 .text6 {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
     font-size: 29px;
-    width: 500px;
-    margin-left: 370px;
     color: #e484eb;
     line-height: 1;
     padding-bottom: 70px;
 }
 
 .section6_img {
-    background-image: url('/image/Maps.png');
-    width: 100vh;
-    height: 100vh;
-    padding-top: 10px;
+    background-size: 100%;
+    background-image: url("/image/Maps.png");
     background-repeat: no-repeat;
+    width: 100%;
+    /* уменьшение ширины до 50% от исходного размера */
+    min-height: 500px;
+    height: auto;
     margin: 0 auto;
-    padding-bottom: 100px;
 }
 
 .Contact_us_btn {
-    text-align: center;
+    display: flex;
     height: auto;
     width: auto;
     font-family: 'Overpass Mono', monospace;
@@ -623,14 +632,15 @@ h4 {
     padding: 7px 30px;
     white-space: nowrap;
     font-weight: 200;
-    margin-top: 610px;
-    margin-left: 370px;
+
 }
 
 .section7 {
+    display: flex;
     width: 100%;
     height: 900px;
     background-color: #242424;
+    flex-wrap: wrap;
 }
 
 .section7_text {
@@ -652,14 +662,17 @@ h4 {
 }
 
 .section7_img {
-    background-image: url("/image/Blue\ Shape.png");
+    display: flex;
+    background-image: url(/image/Blue\ Shape.png);
     background-repeat: no-repeat;
     width: 630px;
     height: 630px;
-    margin-left: 580px;
-    margin-top: -500px;
-
-
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex: 1 1 auto;
 }
 
 .container7_btn_send {
@@ -681,6 +694,8 @@ h4 {
 }
 
 .Title_form {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 33px;
     margin-left: 60px;
     padding-top: 30px;
@@ -690,19 +705,30 @@ h4 {
     padding-top: 50px;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 
 }
+
 .form-row {
     display: inline-block;
     align-items: center;
     margin-bottom: 10px;
-  }
+}
 
 ::-webkit-input-placeholder {
     color: #c0c0c0;
 }
+
+.section_box7 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
 #name {
     font-family: 'Overpass Mono', monospace;
 
@@ -715,7 +741,7 @@ h4 {
     height: 20px;
     margin-bottom: 22px;
     margin-right: -45px;
-    
+
 }
 
 #surname {
@@ -755,10 +781,82 @@ h4 {
     width: 430px;
     height: 225;
 }
-#submit {
+
+.checkbox {
+    margin-left: -400px;
+    display: flex;
+    align-items: center;
 
 }
 
+/* Скрыть элемент <input> */
+#checkbox {
+    display: none;
+}
+
+/* Стилизация галочки */
+.checkmark {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    justify-content: left;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    margin-left: 30px;
+}
+
+/* Отображение галочки, если элемент <input> выбран */
+#checkbox:checked+.checkmark:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+
+/* Стилизация текста метки */
+.label-text {
+    display: flex;
+    width: 385px;
+    text-align: left;
+    margin-left: 590px;
+    margin-top: -10px;
+    margin-right: 140px;
+
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4e5ceb;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #0084ff;
+}
+
+.styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0084ff;
+}
+
+.styled-button:active {
+    background-color: #003cff;
+}
 
 .footer {
     width: 100%;
@@ -769,20 +867,21 @@ h4 {
 .footer_nav {
     font-family: 'Overpass Mono', monospace;
     display: flex;
-    font-size: 35px;
+    font-size: 20px;
     padding-top: 30px;
 }
 
 .footer_nav2 {
     font-family: 'Overpass Mono', monospace;
     display: flex;
-    font-size: 35px;
+    font-size: 20px;
     margin-left: 200px;
     margin-top: -238px;
 }
 
 .footer_inner {
-    height: 650px;
+    max-height: 650px;
+    height: 100%;
     width: 100%;
     max-width: 1330px;
     margin: 0 auto;
@@ -795,89 +894,21 @@ h4 {
     color: #fff;
 }
 
-.footer_nav_link2 {
-    color: #fff;
-    display: flex;
-    padding: 10px 10px 10px 10px;
-}
 
-.Copyright {
+.footer_basement {
+    display: flex;
     color: #00d5ff;
-    margin-top: 370px;
-}
-.checkbox {
-    margin-left: -400px;
-    display: flex;
+    margin-top: 270px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+}
 
-  }
-  
-  /* Скрыть элемент <input> */
-  #checkbox {
-    display: none;
-  }
-  
-  /* Стилизация галочки */
-  .checkmark {
-    position: relative;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #fff;
-    justify-content: left;
-    margin-top: -20px;
-    margin-bottom: -10px;
-    margin-left: 30px;
-  }
-  
-  /* Отображение галочки, если элемент <input> выбран */
-  #checkbox:checked + .checkmark:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-  }
-  
-  
-  /* Стилизация текста метки */
-  .label-text {
+.img_footer {
     display: flex;
-    width: 385px;
-    text-align: left;
-    margin-left: 590px;
-    margin-top: -10px;
-    margin-right: 140px;
-    
- }
- .styled-button {
-    display: inline-block;
-    padding: 5px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #4e5ceb;
-    border: 2px solid #fff;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .styled-button:hover {
-    background-color: #0084ff;
-  }
-  
-  .styled-button:focus {
-    outline: none;
-    box-shadow: 0 0 5px #0084ff;
-  }
-  
-  .styled-button:active {
-    background-color: #003cff;
-  }
-  
-  
+    background-image: url(/image/Footer_logo.png);
+    background-image: url(/image/Facebook.png);
+    background-image: url(/image/Twitter.png);
+    background-image: none;
+    padding-top: 40px;
+}
