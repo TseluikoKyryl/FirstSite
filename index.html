@@ -15,10 +15,10 @@
             event.preventDefault();
             var successMessage = document.getElementById("success-message");
             successMessage.style.display = "block";
-    
-            setTimeout(function() {
-                location.reload(); 
-            }, 500); 
+
+            setTimeout(function () {
+                location.reload();
+            }, 500);
         }
     </script>
     <style>
@@ -31,7 +31,7 @@
         <div class="over_container">
             <div class="first_box">
                 <div class="logo">
-                    <img src="/image/Smart Object.png" alt="">
+                    <img src="/image/Smart_Object.png" alt="">
                 </div>
                 <div class="nav">
                     <nav>
@@ -75,7 +75,8 @@
                         concert
                     </h1>
                     <p class="txt2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
                     </p>
                     <div class="read_more_bnt2">
                         <a class="read_more_bnt22" href="#">Read more</a>
@@ -172,7 +173,7 @@
                 </div>
                 <div class="image-container">
                     <div class="image-container1"><img class="img-container1"
-                            src="/image/(smallPlace Your Image Here (Double Click to Edit)3.png" alt="Картинка 1">
+                            src="/image/3.png" alt="Картинка 1">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -181,7 +182,7 @@
                         </div>
                     </div>
                     <div class="image-container2"><img class="img-container2"
-                            src="/image/(small)Place Your Image Here (Double Click to Edit)4.png" alt="Картинка 2">
+                            src="/image/4.png" alt="Картинка 2">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -190,7 +191,7 @@
                         </div>
                     </div>
                     <div class="image-container3"><img class="img-container1"
-                            src="/image/(smallPlace Your Image Here (Double Click to Edit)5.png" alt="Картинка 3">
+                            src="/image/5.png" alt="Картинка 3">
                         <div class="caption">
                             <p id="img_sub_text">Lorem ipsum dolor</p>
                         </div>
@@ -200,6 +201,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <section class="section5">
         <div class="img_left5">
@@ -236,19 +238,62 @@
     </section>
     <section class="section7">
         <div class="container">
-            <div class="sec7_text">
+            <div class="flexbox">
+                <!-- <div class="sec7_text">
+                    <div>
+                        <h1 class="sec7_sub_text">News letter</h1>
+                        <p class="sec7_under_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor
+                            incididunt ut
+                            labore et</p>
+
+                    </div>
+                </div> -->
                 <div>
                     <h1 class="sec7_sub_text">News letter</h1>
-                </div>
-                <div>
                     <p class="sec7_under_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                         eiusmod tempor
                         incididunt ut
                         labore et</p>
 
                 </div>
-            </div>
-            <div class="sec7_img_form">
+                <div class="sec7_img_form">
+                    <form method="post">
+                        <div class="form">
+                            <div>
+                                <h1 class="Title_form">Follow us</h1>
+                            </div>
+                            <div class="namSurnam">
+                                <input class="name" type="text" name="name" id="name" placeholder="Name" required>
+                                <input class="surname" type="text" name="surname" id="surname" placeholder="Surname"
+                                    required>
+                            </div>
+                            <div class="email_box">
+                                <input class="email" type="email" name="email" id="email" placeholder="E-Mail" required>
+                            </div>
+                            <div class="message_box">
+                                <textarea class="message" name="message" id="message" rows="5" cols="1111"
+                                    required></textarea>
+                            </div>
+    
+                            <div class="Send_box">
+                                <input class="submit" type="submit" value="Send" id="submit" onclick="showSuccessMessage(event)">
+                                <div id="success-message" style="display: none;">successfully
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input class="checkbox" id="html" type="checkbox">
+                        </div>
+                        <div class="text-label1">
+                            <label class="text-label" for="html">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt</label>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="sec7_img_form">
                 <form method="post">
                     <div class="form">
                         <div>
@@ -283,6 +328,7 @@
                             eiusmod tempor incididunt</label>
                     </div>
                 </form>
+            </div> -->
             </div>
         </div>
     </section>
